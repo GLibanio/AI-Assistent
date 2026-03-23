@@ -86,7 +86,7 @@ const PromptForm = ({
                                 </select>
                             </label>
                             <div className='text-xs text-zinc-500 hidden sm:block'>
-                                Press <kbd className='px-1.5 py-0 bg-zinc-800 border border-zinc-700 rounded text-zinc-400'>⌘</kbd>{' '} + <kbd className='px-1.5 py-0 bg-zinc-800 border border-zinc-700 rounded text-zinc-400'>Enter</kbd> {' '} to send
+                                Precione <kbd className='px-1.5 py-0 bg-zinc-800 border border-zinc-700 rounded text-zinc-400'>⌘</kbd>{' '} + <kbd className='px-1.5 py-0 bg-zinc-800 border border-zinc-700 rounded text-zinc-400'>Enter</kbd> {' '} para enviar
                             </div>
                         </div>
 
@@ -94,7 +94,7 @@ const PromptForm = ({
                             <button type='button' onClick={onClearAll} disabled={disableClear} className='flex-1 px-4 py-2 bg-zinc-800 hover:bg-zinc-700 disable:bg-zinc-800 disable:opacity-50 border border-zinc-700 rounded-xl text-zinc-400 hover:text-zinc-200 transition-all duration-200 disable:cursor-not-allowed font-medium sm:flex-none sm:px-6' title='Clear'>
                                 <div className='flex items-center justify-center gap-2'>
                                     <FaTrash className='w-4 h-4'/>
-                                    <span className='hidden sm:inline'>Clear</span>
+                                    <span className='hidden sm:inline'>Limpar</span>
                                 </div>
                             </button>
 
@@ -107,7 +107,7 @@ const PromptForm = ({
                                 ) : (
                                     <div className='flex items-center justify-center gap-2'>
                                         <FaPaperPlane className='w-4 h-4'/>
-                                        <span>Send</span>
+                                        <span>Enviar</span>
                                     </div>
                                 )}
                             </button>

@@ -1,14 +1,14 @@
 import {FaBug, FaBolt, FaFileAlt} from 'react-icons/fa'
 
 const QUICK_ACTIONS = [
-    {Icon: FaFileAlt, label: 'Write documentation', prompt: 'Help me write documentation for my project'},
-    {Icon: FaBolt, label: 'Optimize performance', prompt: 'Help me optimize the performance of my code'},
-    {Icon: FaBug, label: 'Find and fix 3 bugs', prompt: 'Help me find and fix bugs in my code'},
+    {Icon: FaFileAlt, label: 'Escrever documentação', prompt: 'Me ajuda a escrever a documentação do meu projeto'},
+    {Icon: FaBolt, label: 'Otimização de desempenho', prompt: 'Me ajude a otimizar o desempenho do meu código'},
+    {Icon: FaBug, label: 'Procurar e ajustar bugs', prompt: 'Me ajude a encontrar e ajustar bugs no meu código'},
 ]
 
 const QuickActions = ({ onSelect }) => (
     <div className="text-center">
-        <p className='text-zinc-400 text-sm mb-4'>Try these examples to get started</p>
+        <p className='text-zinc-400 text-sm mb-4'>Tente um desses exemplos para começar</p>
         <div className='flex flex-col justify-center gap-2 sm:flex-row sm:flex-wrap sm:gap-3'>
             {QUICK_ACTIONS.map(({Icon, label, prompt }) => (
                 <button key={label} onClick={() => onSelect(prompt)} className='group flex items-center justify-center gap-2 px-4 py-2.5 bg-linear-to-r from-zinc-900/80 to-zinc-800/80 hover:from-zinc-800/80 hover:to-zinc-700/80 border border-zinc-700/50 hover:border-zinc-600/50 rounded-xl text-zinc-300 hover:text-zinc-200 transition-all duration-200 backdrop-blur-sm shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 sm:justify-start'>
